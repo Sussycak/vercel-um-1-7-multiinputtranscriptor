@@ -6,14 +6,14 @@
       "use": "@vercel/node"
     },
     {
-      "src": "public/",
+      "src": "public/**",
       "use": "@vercel/static"
     }
   ],
   "routes": [
-    { "src": "/deepgram-token", "dest": "/index.js" },
-    { "src": "/punctuate", "dest": "/index.js" },
-    { "src": "/transcribe-audio", "dest": "/index.js" },
-    { "src": "/(.*)", "dest": "/public/$1" }
-  ]
+    {"src": "/deepgram-token", "dest": "/index.js" },
+    {"src": "/punctuate", "dest"; "/index.js"},
+    {"src": "transcribe-audio", "dest": "/index.js" },
+    {"src": "/(.*)", "dest": "/public/$1"}
+  ]
 }
